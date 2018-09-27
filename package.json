@@ -1,0 +1,47 @@
+{
+  "name": "typescript-microservices",
+  "version": "1.0.0",
+  "description": "A project to build typescript microservices using fusebox as the bundler.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node fuse.js"
+  },
+  "author": "Joseph Hill",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/body-parser": "^1.17.0",
+    "@types/config": "0.0.34",
+    "@types/cors": "^2.8.4",
+    "@types/debug": "0.0.30",
+    "@types/express": "^4.16.0",
+    "@types/node": "^10.9.4",
+    "@types/winston": "^2.4.4",
+    "fuse-box": "^3.5.0",
+    "typescript": "^3.0.3",
+    "uglify-es": "^3.3.9",
+    "uglify-js": "^3.4.9"
+  },
+  "dependencies": {
+    "@reactivex/rxjs": "^6.3.2",
+    "@types/helmet": "0.0.41",
+    "@types/mongoose": "^5.2.17",
+    "body-parser": "^1.18.3",
+    "config": "^2.0.1",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
+    "debug": "^4.0.1",
+    "express": "^4.16.3",
+    "express-ping": "^1.4.0",
+    "helmet": "^3.13.0",
+    "inversify": "^4.13.0",
+    "mongoose": "^5.2.16",
+    "node-rx": "0.0.3",
+    "reflect-metadata": "^0.1.12",
+    "rimraf": "^2.6.2",
+    "routing-controllers": "^0.7.7",
+    "rx": "^4.1.0",
+    "typedi": "^0.8.0",
+    "typeorm": "^0.2.7",
+    "winston": "^3.1.0"
+  }
+}
