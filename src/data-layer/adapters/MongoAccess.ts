@@ -15,11 +15,11 @@ export class MongooseAccess {
       return this.mongooseInstance
     }
     let connectionString = config.get('mongo.urlClient').toString()
+    this.mongooseInstance = Mongoose.connect(connectionString)
     this.mongooseConnection = Mongoose.connection
     this.mongooseConnection.once('open', () => {
       logger.info('Connection to mongodb is opened.')
     })
-    this.mongooseInstance = Mongoose.connect(connectionString)
     //other events
     this.mongooseConnection.on('connected', () => {
       logger.info('Mongoose default connection open to ' + connectionString)
@@ -32,9 +32,9 @@ export class MongooseAccess {
 
     // When the connection is disconnected
     this.mongooseConnection.on('disconnected', () => {
-      // setTimeout(function() {
-      //   this.mongooseInstance = Mongoose.connect(connectionString)
-      // }, 10000)
+      setTimeout(() => {
+        this.mongooseInstance = Mongoose.connect(connectionString)
+      }, 10000)
       logger.info('Mongoose default connection disconnected.')
     })
 

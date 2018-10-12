@@ -1,4 +1,3 @@
-import { HelloWorld } from './HelloWorld'
-import { GoodbyeWorld } from './GoodbyeWorld'
+import { ProductsController } from './ProductsController'
 
-export const Controllers = [HelloWorld, GoodbyeWorld]
+export const Controllers = [ProductsController]

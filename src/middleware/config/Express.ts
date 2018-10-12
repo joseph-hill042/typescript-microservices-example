@@ -27,6 +27,7 @@ export class ExpressConfig {
     useContainer(Container)
     useExpressServer(this.app, {
       controllers: Controllers,
+      cors: true,
     })
   }
 
