@@ -17,7 +17,6 @@ export class Application {
       --------------------------------------------------
        Server Started! Express: http://localhost:${port}
        Health : http://localhost:${port}/ping
-       Debugger: http:/${this.server.address()}:${port}/?ws=${this.server.address()}:${port}&port=${debugPort}
       ------------------------------------------------------
       `)
     })

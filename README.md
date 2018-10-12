@@ -1,5 +1,7 @@
-# TypeScript Microservice Starter
+# TypeScript Microservice Example
 
-A starter project for building new microservices with typescript.
+This is an example of a nodejs microservice built using TypeScript and a number of libraries to achieve decoupled architecture with proper DI(dependency injection) and IOC(inversion of control).
 
-Fusebox is used as a bundler and task runner.
+The intent is to eventually use this architecture pattern, along with the starter project concept that this example was built from, and create a TypeScript based framework for building node microservices quickly and efficiently.
+
+The goal would be to have a CLI that along with schematics would generate the boilerplate in a standardized format. Angular and it's CLI are a strong inspiration for this project.

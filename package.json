@@ -1,7 +1,7 @@
 {
-  "name": "typescript-microservices",
+  "name": "typescript-microservices-example",
   "version": "1.0.0",
-  "description": "A project to build typescript microservices using fusebox as the bundler.",
+  "description": "This is an example of a nodejs microservice built using TypeScript.",
   "main": "index.js",
   "scripts": {
     "start": "node fuse.js"
